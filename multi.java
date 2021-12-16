@@ -6,14 +6,16 @@ class thread1 extends Thread
 		{
 			for(int i=1;i<=15;i++)
 			{
-				System.out.println("Khusi.........."+i);
+				System.out.println("Aryan....."+i);
 				sleep(1000);
 			}
 		}
 		catch(Exception e)
 		{
+			System.out.println(e);
 		}
 	}
+	
 }
 class thread2 extends Thread
 {
@@ -23,14 +25,16 @@ class thread2 extends Thread
 		{
 			for(int j=60;j<=100;j=j+2)
 			{
-				System.out.println(j+"..........Raj");
+				System.out.println("....Chinu"+j);
 				sleep(500);
 			}
 		}
 		catch(Exception e)
 		{
+			System.out.println(e);
 		}
 	}
+	
 }
 class multi
 {
@@ -38,8 +42,7 @@ class multi
 	{
 		thread1 th1=new thread1();
 		thread2 th2=new thread2();
-
 		th1.start();
 		th2.start();
-	}	
+	}
 }
